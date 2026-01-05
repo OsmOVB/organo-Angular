@@ -1,0 +1,13 @@
+export interface Ilivro {
+    titulo: string;
+    autoria: string;
+    imagem: string;
+    favorito: boolean;
+    genero: IGeneroLiterario;
+}
+
+export interface IGeneroLiterario {
+    id: string;
+    value: string;
+    livros: Ilivro[];
+}
